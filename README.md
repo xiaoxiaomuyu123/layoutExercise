@@ -23,9 +23,8 @@
 
 #### 效果图：  
 
-![image](https://github.com/xiaoxiaomuyu123/layoutExercise/layoutExercisePic/1.png)
-
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/1.png)
+
 #### 解题感想：
 注意盒模型的宽度，我们设置的 div 的 width 是设置的 div 
 内容（content）的宽度，而不是盒模型的宽度。
