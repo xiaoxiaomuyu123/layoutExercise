@@ -23,7 +23,7 @@
 
 #### 效果图：  
 
-https://github.com/xiaoxiaomuyu123/layoutExercise/layoutExercisePic/1.png
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/layoutExercisePic/1.png)
 
 #### 解题感想：
 注意盒模型的宽度，我们设置的 div 的 width 是设置的 div 
