@@ -1,0 +1,105 @@
+<!--
+三栏布局
+三个部分，分别是wrapper、navigation、extra
+要求：
+wrapper 居中且占据50%宽度
+navigation、extra 宽度25%，分居content两侧，左侧navigation，右侧extra
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏布局</title>
+    <style>
+        /* 各部分整体样式 */
+        #header, #footer {
+            background : #f3b2ba;
+        }
+        #wrapper {
+            backgroung : black;
+        }
+        #content {
+            background : #e4674d;
+            padding : 5px;
+        }
+        #navigation {
+            background : #f4c8a2;
+            /*padding-left: 10px;*/
+        }
+        #extra {
+            background : #fdfcb8;
+        }
+        p {
+            margin: 10px;
+        }
+
+        /*不设置 header 中 p 元素的 margin 为 0px，就会导致 header 的 div 与下面的元素有空隙*/
+        #header p {
+            margin : 0px;
+        }
+
+        /* 布局 */
+        #wrapper {
+            /* wrapper 设置成 float 后，后面的元素就能通过设置 margin-left 的值把自己移动到上一行
+               和 wrapper 元素在同一行  */
+            float:left;
+            width: 100%;
+        }
+
+        #content {
+            /*
+            margin:0 25%;
+            content 的 margin 上下设置成 0 有问题，会与页眉页脚之间出现空隙
+            margin top bottom 还要再调节一下, 或者直接修改 content 的 padding
+            */
+            margin:0 25%;
+        }
+
+        #navigation {
+            float : left;
+            width : 25%;
+            margin-left: -100%;
+        }
+
+        #extra {
+            float : left;
+            width : 25%;
+            margin-left : -25%;
+        }
+
+        #footer {
+            /* footer 要清除浮动，若不清除浮动，footer 的内容会包含进上面三个内容，通过设置背景颜色就可以看到 */
+            clear : left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <p>header</p>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+
+            <p><strong>1) Content here. </strong>column long long column very long fill fill fill long text text column text silly very make long very fill silly make make long make text fill very long text column silly silly very column long very column filler fill long make filler long silly very long silly silly silly long filler make column filler make silly long long fill very.</p>
+            <p>very make make fill silly long long filler column long make silly silly column filler fill fill very filler text fill filler column make fill make text very make make very fill fill long make very filler column very long very filler silly very make filler silly make make column column</p>
+            <p>fill long make long text very make long fill column make text very silly column filler silly text fill text filler filler filler make make make make text filler fill column filler make silly make text text fill make very filler column very</p>
+            <p>column text long column make silly long text filler silly very very very long filler fill very fill silly very make make filler text filler text make silly text text long fill fill make text fill long text very silly long long filler filler fill silly long make column make silly long column long make very</p>
+        </div>
+    </div>
+    <div id="navigation">
+
+        <p><strong>2) Navigation here.</strong>long long fill filler very fill column column silly filler very filler fill fill filler text fill very silly fill text filler silly silly filler fill very make fill column text column very very column fill fill very silly column silly silly fill fill long filler</p>
+    </div>
+    <div id="extra">
+
+        <p><strong>3) extra stuff here.</strong>very text make long silly make text very very text make long filler very make column make silly column fill silly column long make silly filler column filler silly long long column fill silly column very</p>
+    </div>
+    <div id="footer">
+        <p>
+            footer
+        </p>
+    </div>
+</body>
+</html>
