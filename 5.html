@@ -1,3 +1,8 @@
+<!--
+1. wrapper 右对齐且占据50%宽度
+2. extra、navigation宽度25%，依次位于content左侧
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,24 +38,24 @@
 
         /* 布局 */
         #wrapper {
-            float : right;
+            float : left;
             width : 100%;
         }
         #content {
             margin : 0 0 0 50%;
         }
         #navigation {
-            float : right;
+            float : left;
             width : 25%;
-            margin-right : -200%;
+            margin-left : -100%;
         }
         #extra {
-            float : right;
+            float : left;
             width : 25%;
-            margin : -75%;
+            margin-left : -75%;
         }
         #footer {
-            clear : right;
+            clear : left;
         }
     </style>
 </head>
