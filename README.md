@@ -42,9 +42,35 @@ boder 以内的盒子区域 统称为盒子的可视区域。
 div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 容易影响他的兄弟元素，在这里用的是 float 属性，就会遮挡其他的
 兄弟元素；若是普通的文档流布局，就会挤开其他的兄弟元素，影响其他
-兄弟元素的位置，从而影响布局。
+兄弟元素的位置，从而影响布局。  
 
-        
+### 2. Three percentage columns(n.1)
+#### 要求：
+在 1 的基础上调换 navigation 和 extra
+#### 效果图： 
+
+
+#### 解题感想：
+元素设置 float 以后，一定要设置宽度。
+
+### 3. Three percentage columns(n.1)
+#### 要求：
+1. wrapper 左对齐且占据50%宽度
+2. extra、navigation宽度25%，依次位于content右侧
+#### 效果图： 
+
+
+### 4. Three percentage columns(n.1)
+#### 要求：
+在 3 的基础上调换 navigation 和 extra
+#### 效果图： 
+
+
+### 5. Three percentage columns(n.1)
+#### 要求：
+1. wrapper 右对齐且占据50%宽度
+2. extra、navigation宽度25%，依次位于content左侧
+#### 效果图：  
 
    
 
