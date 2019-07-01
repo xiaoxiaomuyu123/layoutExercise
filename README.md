@@ -49,6 +49,7 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 在 1 的基础上调换 navigation 和 extra
 #### 效果图： 
 
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/2.png)
 
 #### 解题感想：
 元素设置 float 以后，一定要设置宽度。
@@ -59,12 +60,14 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 2. extra、navigation宽度25%，依次位于content右侧
 #### 效果图： 
 
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/3.png)
 
 ### 4. Three percentage columns(n.1)
 #### 要求：
 在 3 的基础上调换 navigation 和 extra
 #### 效果图： 
 
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/4.png)
 
 ### 5. Three percentage columns(n.1)
 #### 要求：
@@ -72,7 +75,15 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 2. extra、navigation宽度25%，依次位于content左侧
 #### 效果图：  
 
-   
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/5.png)
+
+### 6. Three percentage columns(n.1)
+#### 要求：
+在5的基础上，调换navigation和extra
+#### 效果图：
+  
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/6.png)
+
 
 
 
