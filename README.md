@@ -84,6 +84,20 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
   
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/6.png)
 
+### 7. Three fixed columns(n.7)
+#### 要求：
+1. container 宽度700px且居中
+2. wrapper 居中且宽度400px
+3. extra、navigation 150px，依次位于content两侧
+#### 效果图：
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/7.png)
+
+#### 解题感想：
+margin: 0 auto 设置元素水平居中要满足以下条件才能成立：
+1. 该元素必须设定一个固定的宽度，否则居中无效
+2. 该元素不能是浮动或者绝对定位，否则无效。float 会使元素脱离当前的文档流。
+
 
 
 
