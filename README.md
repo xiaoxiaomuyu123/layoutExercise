@@ -42,7 +42,17 @@ boder 以内的盒子区域 统称为盒子的可视区域。
 div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 容易影响他的兄弟元素，在这里用的是 float 属性，就会遮挡其他的
 兄弟元素；若是普通的文档流布局，就会挤开其他的兄弟元素，影响其他
-兄弟元素的位置，从而影响布局。  
+兄弟元素的位置，从而影响布局。 
+
+有关 margin-left 的理解：子元素的 margin-left，width，margin-right
+都可以设置成 auto。有以下几种情况：   
+情况一：三者之一设置成 auto，那么会使这个子元素的宽度加上 margin 等于父元素
+的 width；   
+情况二：margin-left，width，margin-right都设置了特定值，但是七大属性总和不等于父级元素的width。
+这种情况下： 在FF中，margin-right的值为开发者设定的值，在Chrome中，margin-right被强制为auto 
+情况三：width 设置成 auto，如果margin-left和margin-right都设置特定值，width设置为auto，
+则width将会等于某个特定值以达到父级元素的width。
+
 
 ### 2. Three percentage columns(n.1)
 #### 要求：
@@ -94,10 +104,25 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/7.png)
 
 #### 解题感想：
+三栏布局套路：这三栏都是 flaot 布局。中间一栏的要想居中，不能用 margin ： 0 auto；
+此时中间一栏的剧中由两种办法， 
+一种是自己手动计算，左右两侧的边栏各自是多少 px，设置中间边栏的 maigin 
+左右是刚刚计算出的 px，这种方法可以计算出两边侧栏的 margin-left 的负值具
+体时间多少 px，从而让后面的 div 成为两边的侧栏； 
+另一种是在设置中间栏的左右 margin 时，用 calc（）函数来自动计算。对于这个题目的数据
+来说，用 cacl（）函数计算的方法是，用 整个屏幕的 50% 宽度 减去 中间栏宽度的
+一半，就能得到中间边栏距离屏幕两边的距离了，这样做适应性更强。
+ 
 margin: 0 auto 设置元素水平居中要满足以下条件才能成立：
 1. 该元素必须设定一个固定的宽度，否则居中无效
 2. 该元素不能是浮动或者绝对定位，否则无效。float 会使元素脱离当前的文档流。
 
+### 8. Three fixed columns(n.8)
+#### 要求：
+在7的基础上，调换navigation和extra
+#### 效果图：
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/8.png)
 
 
 
