@@ -51,10 +51,16 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 情况二：margin-left，width，margin-right都设置了特定值，但是七大属性总和不等于父级元素的width。
 这种情况下： 在FF中，margin-right的值为开发者设定的值，在Chrome中，margin-right被强制为auto 
 情况三：width 设置成 auto，如果margin-left和margin-right都设置特定值，width设置为auto，
-则width将会等于某个特定值以达到父级元素的width。
+则width将会等于某个特定值以达到父级元素的width。 
+ 
+负外边距：当margin，padding，border，width 这几个属性都大于零的时候，加起来
+一定会等于父元素的 width，但是可以通过设置 负外边距 得到比父元素 width 更大
+的区域。此时依旧是 margin，padding，border，width 的属性值之和 = 父级元素的宽度
+当元素在文档流中，设置了 margin 为负值，会导致该元素的边界往里收，文档流中
+只兄弟元素只认识边界 margin 这个边界，不会认识该元素的 width
+当元素设置浮动之后，若 margin-left 设置成负值，会以本身的 border 往左移。
 
-
-### 2. Three percentage columns(n.1)
+### 2. Three percentage columns(n.2)
 #### 要求：
 在 1 的基础上调换 navigation 和 extra
 #### 效果图： 
@@ -64,7 +70,7 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 #### 解题感想：
 元素设置 float 以后，一定要设置宽度。
 
-### 3. Three percentage columns(n.1)
+### 3. Three percentage columns(n.3)
 #### 要求：
 1. wrapper 左对齐且占据50%宽度
 2. extra、navigation宽度25%，依次位于content右侧
@@ -72,14 +78,14 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/3.png)
 
-### 4. Three percentage columns(n.1)
+### 4. Three percentage columns(n.4)
 #### 要求：
 在 3 的基础上调换 navigation 和 extra
 #### 效果图： 
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/4.png)
 
-### 5. Three percentage columns(n.1)
+### 5. Three percentage columns(n.5)
 #### 要求：
 1. wrapper 右对齐且占据50%宽度
 2. extra、navigation宽度25%，依次位于content左侧
@@ -87,7 +93,7 @@ div 本身的padding 值会导致该 div 的盒模型可视面积变化，
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/5.png)
 
-### 6. Three percentage columns(n.1)
+### 6. Three percentage columns(n.6)
 #### 要求：
 在5的基础上，调换navigation和extra
 #### 效果图：
