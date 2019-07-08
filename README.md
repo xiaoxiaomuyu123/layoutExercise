@@ -130,6 +130,16 @@ margin: 0 auto 设置元素水平居中要满足以下条件才能成立：
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/8.png)
 
+### 9. Three fixed columns(n.9)
+#### 要求：  
+1. container 宽度 700px，居中  
+2. wrapper 左对齐，宽度 400px
+3. navigation extra 宽度 150px，依次居于右侧
+
+#### 效果图：  
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/9.png)
+
 
 
 
