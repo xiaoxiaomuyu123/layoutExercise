@@ -140,6 +140,23 @@ margin: 0 auto 设置元素水平居中要满足以下条件才能成立：
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/9.png)
 
+#### 解题感想：
+float 的几个块元素会尽量分布在同一行
 
+### 10. Three fixed columns(n.10)
+#### 要求：
+在 9 的基础上，调换navigation和extra
+#### 效果图：
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/10.png)
+
+#### 解题感想：
+两种方法： 
+1. 让 navigation float ：right；extra float ：left；就解决啦
+2. 还是让 navigation 和 extra 两个都是 float:left，但是呢，要调节
+margin-left 值。navigation 设置 150px，这样可以给 extra 150px 的
+位置，extra 设置成 -300px，原因是，当设置了 navigation margin-left
+为 150px 的时候，navigation 盒模型就会占据上面一行，把 extra 挤下来了
+extra 就要设置成 -300px，才能回到第一行。
 
 
