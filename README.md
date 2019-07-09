@@ -169,5 +169,12 @@ extra 就要设置成 -300px，才能回到第一行。
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/11.png)
 
+### 12. Three fixed columns(n.10)
+#### 要求：
+在 11 的基础上，调换navigation和extra
+#### 效果图：
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/11.png)
+
 
 
