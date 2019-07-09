@@ -159,4 +159,15 @@ margin-left 值。navigation 设置 150px，这样可以给 extra 150px 的
 为 150px 的时候，navigation 盒模型就会占据上面一行，把 extra 挤下来了
 extra 就要设置成 -300px，才能回到第一行。
 
+### 11. Three fixed columns(n.11)
+#### 要求：  
+1. container 宽度 700px，居中  
+2. wrapper 右对齐，宽度 400px
+3. navigation extra 宽度 150px，依次位于左侧
+
+#### 效果图：  
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/11.png)
+
+
 
