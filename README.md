@@ -176,5 +176,23 @@ extra 就要设置成 -300px，才能回到第一行。
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/11.png)
 
+### 13. Liquid, secondary columns fixed-width (n.13)
+#### 要求：   
+1. wrapper 居中，宽度自适应
+3. navigation extra 宽度 200px，依次位于两侧
 
+#### 效果图：  
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/13.png)
+
+#### 解题感想：
+这应该是传说中的圣杯布局或者双飞翼布局。其中设置了 navigation 的 margin-left
+为 -100%，使得 navigation 能够移动到 wrapper 这一行的最左边。原理是：
+margin-left 的值 如果是 px ，那么直接就是在包裹着他的父元素内向左移动
+那么多 px 的距离，本行不够，就向上一行移动来凑。如果 margin-left 设置的是
+百分数，要注意，这个时候的百分数是相对 navigation 的父元素来说的。所以设置
+-100% 就是向左移动一个父元素的宽度。但是要注意，extra 的 margin-left 的
+负值就不能用百分数来表示了，原因是，此时中间的元素宽度不确定，那么百分数的
+分母就不确定，不能具体的计算出 extra 的上移百分数，但是却可以轻松地算出他上移
+具体 px 是多少。
 
