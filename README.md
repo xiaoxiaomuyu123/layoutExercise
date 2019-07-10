@@ -169,12 +169,12 @@ extra 就要设置成 -300px，才能回到第一行。
 
 ![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/11.png)
 
-### 12. Three fixed columns(n.10)
+### 12. Three fixed columns(n.12)
 #### 要求：
 在 11 的基础上，调换navigation和extra
 #### 效果图：
 
-![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/11.png)
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/12.png)
 
 ### 13. Liquid, secondary columns fixed-width (n.13)
 #### 要求：   
@@ -196,3 +196,9 @@ margin-left 的值 如果是 px ，那么直接就是在包裹着他的父元素
 分母就不确定，不能具体的计算出 extra 的上移百分数，但是却可以轻松地算出他上移
 具体 px 是多少。
 
+### 14. Three fixed columns(n.14)
+#### 要求：
+在 13 的基础上，调换navigation和extra
+#### 效果图：
+
+![image](https://github.com/xiaoxiaomuyu123/layoutExercise/blob/master/layoutExercisePic/14.png)
